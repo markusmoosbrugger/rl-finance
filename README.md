@@ -74,6 +74,24 @@ like to install it in the virtual environment you need to activate it previously
 pip install -r requirements.txt
 ```
 
+#### M1 Chip problem
+
+If you are using an Apple Computer with the new M1 chip you may face issues with installing scipy. To overcome these
+issues please **miniconda** https://docs.conda.io/en/latest/miniconda.html. Each package can then be installed with
+
+```
+conda install somePackage
+```
+
+### Verify installed packages
+
+After installing the required packages and activating the environment you can verify if everything works as expected by
+running the following script
+
+```
+python package_verify.py
+```
+
 ### Run jupyter notebook
 
 If you use the virtual environment approach you need to specify register the kernel in the jupyter notebook:
